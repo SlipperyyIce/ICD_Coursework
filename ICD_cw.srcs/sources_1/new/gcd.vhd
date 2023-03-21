@@ -54,7 +54,7 @@ constant prime_factors : int_array(0 to 30):= (2,3,5,7,11,13,17,19,23,29,31,37,4
 begin
 
     process (Reset) -- Defines process that runs when reset switches to high
-    variable largest,remainder: integer range 0 to 5550;
+    variable largest,remainder: integer range -1 to 5550;
     variable A_factors,B_factors,common_factors : int_array(0 to 6);
     variable c_index: integer range 0 to 7 := 0;
     variable output: integer range 0 to 5550  := 1;
